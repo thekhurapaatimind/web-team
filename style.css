@@ -10,6 +10,7 @@ nav{
 	justify-content: space-around;
 	align-items: center;
 	min-height: 11vh;
+	
 }
 .nav-links{
 	display: flex;
@@ -72,6 +73,7 @@ nav{
 	}
 	.nav-links{
 		position: absolute;
+		z-index: 9;
 		background-color: hsl(256, 26%, 20%);
 		height: 100%;
 		width: 100%;
@@ -147,7 +149,7 @@ nav{
 	justify-content: space-between;
 	align-items: center;
 	min-height: 50vh;
-	padding: 10px 120px;
+	padding: 10px 150px;
 	background-color: hsl(256, 26%, 20%);;
 }
 .textbox{
@@ -196,4 +198,76 @@ nav{
 	padding: 0px;
 	right: 0;
 	top: 0;
+}
+.werediff{
+	position: relative;
+	z-index: 3;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	/* align-items: center; */
+	min-height: 50vh;
+	top: 260px;
+	padding: 10px 12%;
+	/* font-family: 'DM Serif Display', serif; */
+	overflow: hidden;
+}
+
+.new{
+	color: black;
+	text-align: left;
+	
+}
+
+.werediff table{
+	text-align: left;
+	min-height: 10vh;
+}
+.werediff table th{
+	width: 33.3%;
+	padding: 10px;
+	font-weight: lighter;
+}
+.content{
+	color: grey;
+	opacity: 0.8;
+}
+.purplebox{
+	background-color:  hsl(256, 26%, 20%);
+	min-height: 35vh;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 100px;
+	align-items: center;
+	overflow: hidden;
+	position: relative;
+}
+.purplebox h2{
+	font-family: 'DM Serif Display', serif;
+	font-weight: normal;
+	line-height: 50px;
+	font-size: 50px;
+	color: #fff;
+}
+.purplebox a{
+	font-family: 'DM Serif Display', serif;
+	text-decoration: none;
+	font-size: 14px;
+	letter-spacing: 3px;
+	border: 2px solid #fff;
+	padding: 8px 20px;
+	color:#fff;
+	transition: 0.6s ease;
+}
+.purplebox a:hover{
+	background-color:white;
+	color: hsl(256, 26%, 20%);
+}
+.workpattern{
+	position: absolute; 
+	right: 0;
+	overflow: hidden;
+	max-width: 100%;
+	max-width: 100%;
 }
