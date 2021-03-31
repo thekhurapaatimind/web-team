@@ -62,11 +62,7 @@ nav{
 	background-color:hsl(256, 26%, 20%);
 	color: white;
 }
-@media screen and (max-width: 1250px){
-	.nav-links{
-		width: 60%
-	}
-}
+
 @media screen and (max-width: 800px){
 	body{
 		overflow-x: hidden;
@@ -149,7 +145,7 @@ nav{
 	justify-content: space-between;
 	align-items: center;
 	min-height: 50vh;
-	padding: 10px 150px;
+	padding: 2% 12%;
 	background-color: hsl(256, 26%, 20%);;
 }
 .textbox{
@@ -158,13 +154,14 @@ nav{
 .textbox h2{
 	font-family: 'DM Serif Display', serif;
 	font-weight: normal;
-	line-height: 70px;
-	font-size: 70px;
+	line-height: 65px;
+	font-size: 65px;
 }
 .textbox p{
+	max-width: 80%;
 	font-family: 'Karla', sans-serif;
 	font-weight: 400;
-	font-size: 17px;
+	font-size: 100%;
 	letter-spacing: 0.2px;
 	line-height: 25px;
 }
@@ -192,6 +189,8 @@ nav{
 	position: relative;
 	padding: 0px;
 	top: 100px;
+	width: 480px;
+	height: auto;
 }
 .rightintro{
 	position: absolute;
@@ -270,4 +269,85 @@ nav{
 	overflow: hidden;
 	max-width: 100%;
 	max-width: 100%;
+}
+.footer{
+	/* font-family: 'Karla', sans-serif; */
+	position: relative;
+	z-index: 3;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 20vh;
+	top: 260px;
+	padding: 2% 12%;
+	/* font-family: 'DM Serif Display', serif; */
+	/* overflow: hidden; */
+	background-color: hsl(0, 0%, 98%);
+}
+.foot1{
+	position: relative;
+	z-index: 3;
+	width: 100%;
+	display: flex;
+	/* flex-direction: column; */
+	justify-content: space-between;
+	/* align-items: center; */
+	/* min-height: 50vh; */
+	/* top: 260px; */
+	/* padding: 10px 12%; */
+	/* font-family: 'DM Serif Display', serif;
+	 */
+	overflow: hidden;
+}
+.social{
+	display: flex;
+	right: 0px;
+	justify-content: space-evenly;
+	width: 20%;
+}
+.social li{
+	list-style: none;
+}
+.fotab{
+	/* font-family: 'Karla', sans-serif; */
+	font-weight: 500;
+	width: 100%;
+}
+table tr{
+	position: relative;
+	top: 0;
+}
+td .footlinks{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.footlinks a{
+	
+	text-decoration: none;
+	/* font-family: 'Karla'; */
+	font-size: 14px;
+	/* letter-spacing: 3px; */
+	color: #4b4b4bea;
+	/* font-weight: 800; */
+	
+}
+
+
+
+
+@media screen and (max-width: 1250px){
+	.nav-links{
+		width: 60%
+	}
+	.textbox h2{
+		font-size: 50px;
+		line-height: 50px;
+	}
+	.imgbox{
+		width: 400px;
+		height: auto;
+	}
 }
