@@ -334,6 +334,9 @@ td .footlinks{
 	/* font-weight: 800; */
 	
 }
+.footlinks a:hover{
+	text-decoration: underline;
+}
 
 
 
