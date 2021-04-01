@@ -307,8 +307,26 @@ nav{
 	justify-content: space-evenly;
 	width: 20%;
 }
+
 .social li{
 	list-style: none;
+	
+}
+
+.social svg path{
+	transition: 0.2s ease-in;
+}
+.icons1:hover{
+	fill: blue;
+}
+.icons2:hover{
+	fill: rgb(0, 162, 255);
+}
+.icons3:hover{
+	fill: rgb(255, 0, 0);
+}
+.icons4:hover{
+	fill: rgb(153, 3, 133);
 }
 .fotab{
 	/* font-family: 'Karla', sans-serif; */
@@ -318,11 +336,13 @@ nav{
 table tr{
 	position: relative;
 	top: 0;
+	display: flex;
+	justify-content: space-between;
 }
 td .footlinks{
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
+	justify-content: space-evenly;
 }
 .footlinks a{
 	
@@ -337,7 +357,6 @@ td .footlinks{
 .footlinks a:hover{
 	text-decoration: underline;
 }
-
 
 
 
