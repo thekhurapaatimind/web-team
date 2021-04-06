@@ -41,6 +41,7 @@ nav{
 .burger{
 	display: none;
 	cursor: pointer;
+	border: 2px solid rgb(31, 30, 30);
 }
 .burger div{
 	width: 25px;
@@ -63,81 +64,6 @@ nav{
 	color: white;
 }
 
-@media screen and (max-width: 800px){
-	body{
-		overflow-x: hidden;
-	}
-	.nav-links{
-		position: absolute;
-		z-index: 9;
-		background-color: hsl(256, 26%, 20%);
-		height: 100%;
-		width: 100%;
-		top: 10vh;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		color: hsl(293, 60%, 97%);
-		transform: translateX(100%);
-		transition: transform 0.5s ease-in;
-	}
-	.nav-links li{
-		opacity: 0;
-	}
-	.burger{
-		display: block;
-	}
-	.al{
-		color: hsl(274, 47%, 94%);
-	}
-	.al:hover{
-		color: rgb(255, 255, 255);
-	}
-	.btn{
-		text-decoration: none;
-		font-size: 14px;
-		letter-spacing: 3px;
-		border: 2px solid #fff;
-		padding: 8px 30px;
-		color:#fff;
-		transition: 0.6s ease;
-	}
-	.btn:hover{
-		background-color:white;
-		color: hsl(256, 26%, 20%);
-	}
-	.nav-links div{
-		display: flex;
-		position: bottom;
-		width: 100%;
-		bottom: 0;
-	}
-	
-}
-.nav-active{
-	transform: translateX(0%);
-}
-
-@keyframes navLinkFade{
-	from{
-		opacity: 0;
-		transform: translateX(50px);
-	}
-	to{
-		opacity: 1;
-		transform: translateX(0px);
-	}
-}
-
-.toggle .line1{
-	transform: rotate(-45deg) translate(-5px,6px);
-}
-.toggle .line2{
-	opacity: 0;
-}
-.toggle .line3{
-	transform: rotate(45deg) translate(-5px,-6px);
-}
 .header{
 	position: relative;
 	width: 100%;
@@ -198,6 +124,9 @@ nav{
 	right: 0;
 	top: 0;
 }
+.mobhead{
+	display: none;
+}
 .werediff{
 	position: relative;
 	z-index: 3;
@@ -252,7 +181,6 @@ nav{
 .purplebox a{
 	position: relative;
 	z-index: 10;
-	font-family: 'DM Serif Display', serif;
 	text-decoration: none;
 	font-size: 14px;
 	letter-spacing: 3px;
@@ -374,4 +302,144 @@ td .footlinks{
 		width: 400px;
 		height: auto;
 	}
+}
+
+
+@media screen and (max-width: 800px){
+	body{
+		overflow-x: hidden;
+	}
+	.nav-links{
+		position: absolute;
+		z-index: 9;
+		background-color: hsl(256, 26%, 20%);
+		height: 100%;
+		width: 100%;
+		top: 10vh;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		color: hsl(293, 60%, 97%);
+		transform: translateX(100%);
+		transition: transform 0.5s ease-in;
+	}
+	.nav-links li{
+		opacity: 0;
+	}
+	.burger{
+		display: block;
+	}
+	.al{
+		color: hsl(274, 47%, 94%);
+	}
+	.al:hover{
+		color: rgb(255, 255, 255);
+	}
+	.btn{
+		text-decoration: none;
+		font-size: 14px;
+		letter-spacing: 3px;
+		border: 2px solid #fff;
+		padding: 8px 30px;
+		color:#fff;
+		transition: 0.6s ease;
+	}
+	.btn:hover{
+		background-color:white;
+		color: hsl(256, 26%, 20%);
+	}
+	.nav-links div{
+		display: flex;
+		position: bottom;
+		width: 100%;
+		bottom: 0;
+	}
+	.textbox{
+		display: none;
+	}
+	.header hr{
+		display: none;
+	}
+	.header div{
+		display: none;
+	}
+	.header{
+		display: none;
+	}
+	.mobhead{
+		display: flex;
+		flex-direction: column;
+	}
+	.mobintro{
+		display: flex;
+		width: 100vw;
+	}
+	.mobtext{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 25vh 5vw;
+		background-color: hsl(256, 26%, 20%);
+		position: relative;
+	}
+	.mobtext h2{
+		font-size: 10vh;
+		color: #fff;
+	}
+	.mobtext p{
+		padding: 0vh 5vw;
+		font-size: 3.5vh;
+		color: #fff;
+		font-family: 'Karla', sans-serif;
+		line-height: 5vh;
+		font-weight: lighter;
+	}
+	.mobtext a{
+		font-family: 'DM Serif Display', serif;
+		text-decoration: none;
+		font-size: 14px;
+		letter-spacing: 3px;
+		border: 2px solid #fff;
+		padding: 8px 20px;
+		color:#fff;
+		transition: 0.6s ease;
+	}
+	.mobtext a:hover{
+		background-color:white;
+		color: hsl(256, 26%, 20%);
+	}
+	.leftmob{
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	.rightmob{
+		position: absolute;
+		right: 0;
+		top: 70vh;
+	}
+}
+.nav-active{
+	transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+	from{
+		opacity: 0;
+		transform: translateX(50px);
+	}
+	to{
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+
+.toggle .line1{
+	transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+	opacity: 0;
+}
+.toggle .line3{
+	transform: rotate(45deg) translate(-5px,-6px);
 }
