@@ -383,15 +383,15 @@ td .footlinks{
 		position: relative;
 	}
 	.mobtext h2{
-		font-size: 10vh;
+		font-size: 60px;
 		color: #fff;
 	}
 	.mobtext p{
 		padding: 0vh 5vw;
-		font-size: 3.5vh;
+		font-size: 25px;
 		color: #fff;
 		font-family: 'Karla', sans-serif;
-		line-height: 5vh;
+		line-height: 30px;
 		font-weight: lighter;
 	}
 	.mobtext a{
@@ -416,7 +416,7 @@ td .footlinks{
 	.rightmob{
 		position: absolute;
 		right: 0;
-		top: 70vh;
+		top: 500px;
 	}
 }
 .nav-active{
