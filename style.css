@@ -109,7 +109,7 @@ nav{
 	position: absolute;
 	padding: 0px;
 	left: 0;
-	top: 500px;
+	top: 480px;
 }
 .imgbox{
 	position: relative;
@@ -136,7 +136,7 @@ nav{
 	justify-content: space-between;
 	/* align-items: center; */
 	min-height: 50vh;
-	top: 260px;
+	top: 160px;
 	padding: 10px 12%;
 	/* font-family: 'DM Serif Display', serif; */
 	overflow: hidden;
@@ -158,8 +158,10 @@ nav{
 	font-weight: lighter;
 }
 .content{
-	color: grey;
-	opacity: 0.8;
+	font-family: 'Karla', sans-serif;
+	color: #464646;
+	opacity: 0.7;
+	font-weight: bolder;
 }
 .purplebox{
 	background-color:  hsl(256, 26%, 20%);
@@ -179,6 +181,7 @@ nav{
 	color: #fff;
 }
 .purplebox a{
+	font-family: 'Karla', sans-serif;
 	position: relative;
 	z-index: 10;
 	text-decoration: none;
@@ -200,6 +203,9 @@ nav{
 	max-width: 100%;
 	max-width: 100%;
 }
+.workpattern2{
+	display: none;
+}
 .footer{
 	/* font-family: 'Karla', sans-serif; */
 	position: relative;
@@ -215,6 +221,9 @@ nav{
 	/* font-family: 'DM Serif Display', serif; */
 	/* overflow: hidden; */
 	background-color: hsl(0, 0%, 98%);
+}
+.pat2{
+	display: none;
 }
 .foot1{
 	position: relative;
@@ -266,6 +275,7 @@ nav{
 table tr{
 	position: relative;
 	top: 0;
+	padding: 0px 30px;
 	display: flex;
 	justify-content: space-between;
 }
@@ -302,12 +312,21 @@ td .footlinks{
 		width: 400px;
 		height: auto;
 	}
+	.purplebox{
+		min-height: 250px;
+		padding: 10px 40px;
+	}
+	.purplebox a{
+		
+		padding: 10px 10px;
+	}
 }
 
 
 @media screen and (max-width: 800px){
 	body{
 		overflow-x: hidden;
+		
 	}
 	.nav-links{
 		position: absolute;
@@ -320,7 +339,7 @@ td .footlinks{
 		flex-direction: column;
 		align-items: center;
 		color: hsl(293, 60%, 97%);
-		transform: translateX(100%);
+		opacity: 0;
 		transition: transform 0.5s ease-in;
 	}
 	.nav-links li{
@@ -418,9 +437,151 @@ td .footlinks{
 		right: 0;
 		top: 380px;
 	}
+	.werediff
+	{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		width: 100vw;
+		top: 70px;
+		padding: 20px;
+
+	}
+	.werediff .textbox{
+		top: 0px;
+		display: flex;
+		
+	}
+	.werediff .textbox h2{
+		text-align: center;
+		font-size: 45px;
+	}
+	.werediff tr{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		width: 100vw;
+		
+	}
+	.werediff th{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		width: 100vw;
+		text-align: center;
+	}
+	.werediff h1{
+		text-align: center;
+		display: flex;
+		justify-content: space-evenly;
+		width: 70vw;
+	}
+	.content{
+		font-family: 'Karla', sans-serif;
+		opacity: 1;
+		color: hsl(0, 1%, 29%);
+		font-weight: bolder;
+		text-align: center;
+		display: flex;
+		justify-content: space-evenly;
+		width: 70vw;
+		line-height: 25px;
+	}
+	.purplebox{
+		min-height: 55vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		padding: 80px 30px;
+		align-items: center;
+		overflow: hidden;
+		position: relative;
+	}
+	.purplebox h2{
+		font-family: 'DM Serif Display', serif;
+		font-weight: normal;
+		line-height: 40px;
+		font-size: 38px;
+		text-align: center;
+		color: #fff;
+	}
+	.purplebox a{
+		
+		padding: 10px 10px;
+	}
+	.workpattern{
+		display: none;
+	}
+	.workpattern2{
+		display: flex;
+		position: absolute; 
+		right: 0;
+		top: 0;
+		overflow: hidden;
+		max-width: 100%;
+		max-width: 100%;
+	}
+	.footer{
+		/* font-family: 'Karla', sans-serif; */
+		position: relative;
+		z-index: 3;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		min-height: 20vh;
+		top: 260px;
+		padding: 2% 12%;
+		/* font-family: 'DM Serif Display', serif; */
+		/* overflow: hidden; */
+		background-color: hsl(0, 0%, 98%);
+	}
+	.pat1{
+		display: none;
+	}
+	.pat2{
+		display: flex;
+		width: 100vw;
+	}
+	.foot1{
+		padding-top: 50px;
+		position: relative;
+		z-index: 3;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		overflow: hidden;
+		min-height: 120px;
+	}
+	.social{
+		display: flex;
+		right: 0px;
+		justify-content: space-evenly;
+		width: 50%;
+	}
+	.fotab{
+		/* font-family: 'Karla', sans-serif; */
+		font-weight: 500;
+		width: 100%;
+	}
+	table tr{
+		position: relative;
+		top: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		text-align: center;
+	}
 }
 .nav-active{
-	transform: translateX(0%);
+	opacity: 1;
 }
 
 @keyframes navLinkFade{
